@@ -1,0 +1,15 @@
+syntax = "proto3";
+package email;
+
+message SendRequest {
+  repeated string To = 1;
+  string Subject = 2;
+  string Body = 3;
+  string ContentType = 4;
+}
+message PomeAsyncResp{
+}
+
+service EmailService {
+  rpc Send(SendRequest) returns (PomeAsyncResp){}
+}

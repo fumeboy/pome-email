@@ -1,0 +1,7 @@
+sidecar_port: 12000
+smtp:
+  host: <host>
+  port: <port>
+  user: <user>
+  password: <password>
+
